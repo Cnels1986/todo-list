@@ -4,15 +4,18 @@
         <meta charset="utf-8">
         <title>Todo List - The Odin Project</title>
         <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
     </head>
     <body>
         <button id="new_project_button">Add Project</button>
         <div id="project_modal" class="hidden">
-            <form>
-                <label for="projectName">Project Name</label>
-                <input type="text" name="projectName" placeholder="default" maxlength="30" id="project_name_input">
-                <button type="button" name="submit">Add</button>
-            </form>
+            <div id="project_modal_container">
+                <form>
+                    <label for="projectName">Project Name</label>
+                    <input type="text" name="projectName" placeholder="default" maxlength="30" id="project_name_input">
+                    <button type="button" name="submit" id="addProject">Add</button>
+                </form>
+            </div>
         </div>
     </body>
 </html>
